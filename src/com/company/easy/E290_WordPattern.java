@@ -23,7 +23,6 @@ public class E290_WordPattern {
                 if( !map.get(ch).equals(split[i]))  return false;
             }else if(map.containsValue(split[i]) ){
                 return false;
-
             }else {map.put(ch,split[i]);}
         }
         return true;

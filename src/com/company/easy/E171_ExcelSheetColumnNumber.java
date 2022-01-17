@@ -9,7 +9,6 @@ public class E171_ExcelSheetColumnNumber {
             int ascii = columnTitle.charAt(i) - 'A'+1;
             num = num + ascii;
         }
-
         return num;
     }
 

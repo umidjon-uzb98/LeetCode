@@ -12,22 +12,6 @@ public class E349_IntersectionofTwoArrays {
 //    Output: [9,4]
 //    Explanation: [4,9] is also accepted.
 
-    public int[] intersection(int[] nums1, int[] nums2) {
-        int[] count = new int[1001];
-        for (int i = 0; i < nums1.length; i++) {
-            count[nums1[i]]++;
-        }
-        int[] result = new int[nums1.length];
-        int index = 0;
-        for (int i = 0; i < nums2.length; i++) {
-            if (count[nums2[i]] > 0) {
-                result[index++] = nums2[i];
-                count[nums2[i]] = 0;
-            }
-        }
-        return Arrays.copyOf(result, index);
-    }
-
     /*
 
     public int[] intersection(int[] nums1, int[] nums2) {
@@ -51,5 +35,42 @@ public class E349_IntersectionofTwoArrays {
     }
 
    */
+
+/*    public int[] intersection(int[] nums1, int[] nums2) {
+        int[] count = new int[1001];
+        for (int i = 0; i < nums1.length; i++) {
+            count[nums1[i]]++;
+        }
+        int[] result = new int[nums1.length];
+        int index = 0;
+        for (int i = 0; i < nums2.length; i++) {
+            if (count[nums2[i]] > 0) {
+                result[index++] = nums2[i];
+                count[nums2[i]] = 0;
+            }
+        }
+        return Arrays.copyOf(result, index);
+    }*/
+
+
+   /* public int[] intersection(int[] nums1, int[] nums2) {
+        List<Integer> list = new ArrayList<>();
+        for(int i : nums1){
+            for(int j : nums2){
+                if(i == j){
+                    if(!list.contains(i)){
+                        list.add(i);
+                    }
+                }
+            }
+        }
+        int[] ans = new int[list.size()];
+        int index =0;
+        for(int no : list){
+            ans[index] = no;
+            index++;
+        }
+        return ans;
+    }*/
 }
 
