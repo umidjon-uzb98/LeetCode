@@ -1,7 +1,7 @@
 package com.company.easy;
 
 
-public class E14_LongestCommonPrefix {
+public class    E14_LongestCommonPrefix {
 /*
 public String longestCommonPrefix(String[] strs) {
        String prefix = strs[0];

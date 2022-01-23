@@ -7,8 +7,6 @@ public class E66_PlusOne {
 //    Incrementing by one gives 123 + 1 = 124.
 //    Thus, the result should be [1,2,4].
 
-
-
 /*
    public int[] plusOne(int[] d) {
         int n = d.length;

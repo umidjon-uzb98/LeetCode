@@ -1,6 +1,9 @@
 package com.company.easy;
 
 public class E28_ImplementstrStr {
+//    Example 1:
+//    Input: haystack = "hello", needle = "ll"
+//    Output: 2
 
  /*   public int strStr (String haystack, String needle){
         if (needle.length() > haystack.length() ) {

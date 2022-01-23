@@ -17,6 +17,5 @@ public class E367_ValidPerfectSquare {
 
         return false;
     }
-
 }
 
