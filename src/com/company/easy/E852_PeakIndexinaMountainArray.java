@@ -3,7 +3,9 @@ package com.company.easy;
 public class E852_PeakIndexinaMountainArray {
     public int peakIndexInMountainArray(int[] arr) {
 //[0,1,2,3,10,5,2,1,0]
-        int start = 0, end = arr.length - 1, mid = start + (end - start) / 2;
+        int start = 0;
+        int end = arr.length - 1;
+        int mid = start + (end - start) / 2;
 
         while (start < end) {
             // checking if the mid eleement is smaller

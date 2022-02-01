@@ -3,20 +3,17 @@ package com.company.easy;
 public class E744_FindSmallestLetterGreaterThanTarget {
 
     public char nextGreatestLetter(char[] letters, char target) {
-        int left = 0;
-        int right = letters.length-1;
+        int l = 0;
+        int r = letters.length-1;
+        if(letters[r] <= target) return letters[0];
 
-        if(letters[right] <= target )
-            return letters[0];
-
-        while(left < right){
-            int mid = left + (right-left)/2;
-
-            if(letters[mid] > target) right = mid;
-            else left = mid+1;
+        while(l < r){
+            int mid = l+(r-l)/2;
+            if(letters[mid] > target)  r=mid;
+            else l=mid+1;
         }
 
-        return letters[right];
+        return letters[l];
     }
 
 }

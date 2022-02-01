@@ -20,9 +20,7 @@ public class E228_SummaryRang {
 
             if (nums[i] == nums[j]) {
                 build.append(nums[i]);
-            }
-
-            else {
+            }       else {
                 build.append(nums[i]);
                 build.append("->");
                 build.append(nums[j]);

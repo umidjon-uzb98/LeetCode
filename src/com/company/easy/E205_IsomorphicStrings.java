@@ -32,17 +32,17 @@ public class E205_IsomorphicStrings {
             int n=s.length();
             for(int i=0;i<n;i++)
             {
-                char x1=s.charAt(i);
-                char x2=t.charAt(i);
-                if(map.containsKey(x1)){
-                    if(x2!=map.get(x1))
+                char key=s.charAt(i);
+                char value=t.charAt(i);
+                if(map.containsKey(key)){
+                    if(value!=map.get(key))
                         return false;
                 }
                 else{
-                    if(map.containsValue(x2))
+                    if(map.containsValue(value))
                         return false;
                     else
-                        map.put(x1,x2);
+                        map.put(key,value);
                 }
             }
             return true;
